@@ -1,8 +1,18 @@
 <html>
     <head>
-    <script></script>
+    <script>
+    const input = document.querySelector("input");
+    
+    const output = document.getElementById("output");
+
+input.addEventListener("change", updateValue);
+
+function updateValue(e) {
+  output.innerHTML = e.target.value;
+}
+    </script>
     </head>
     <body>
-<input />
+<input /><div id="output"></div>
     </body>
 </html>
